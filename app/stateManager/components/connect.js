@@ -2,7 +2,6 @@ import React from 'react';
 import {
     defaultMapDispatchToProps,
     defaultMapStateToProps,
-    registerComponent,
 } from '../functions';
 import Provider from './provider';
 

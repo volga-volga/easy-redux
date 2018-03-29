@@ -12,7 +12,6 @@ import {
 } from './stateManager';
 import {combineReducers} from './stateManager/functions';
 
-
 function reducer(state, action) {
     if (action.type == 'SET_COLOR') {
         return {
@@ -45,6 +44,7 @@ class Test extends Component {
 }
 
 const ConnectedTest = connect((state) => ({color: state.default.color}))(Test);
+
 class App extends Component {
     render() {
         return (
